@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mingle - Lær dansk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/loginsprogmakker.css">
+
+    <meta name="robots" content="noindex, follow">
+    <link href="https://fonts.googleapis.com/css?family=Jua|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="img/favicon.ico">
+  </head>
+  <body>
+    <header>
+
+
+    <main>
+      <div class="grid">
+        <div class="minglelogo1">
+          <img src="img/uploadfoto.png" alt="">
+        </div>
+        <form action="https://httpbin.org/post" method="POST" class="form login">
+
+          <div class="form__field">
+            <label for="login__username"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use></svg><span class="hidden">Dit navn</span></label>
+            <input id="login__username" type="text" name="username" class="form__input" placeholder="Dit navn" required>
+          </div>
+
+          <div class="form__field">
+            <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Emailadresse</span></label>
+            <input id="login__password" type="password" name="password" class="form__input" placeholder="Emailadresse" required>
+          </div>
+
+          <div class="form__field">
+            <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Din klasse</span></label>
+            <input id="login__password" type="password" name="password" class="form__input" placeholder="Din klasse" required>
+          </div>
+
+          <div class="form__field">
+            <label for="login__password"><svg class="icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#lock"></use></svg><span class="hidden">Dit tlf.nr.</span></label>
+            <input id="login__password" type="password" name="password" class="form__input" placeholder="Tlf.nr" required>
+          </div>
+
+          <div class="form__field">
+            <!--oprindelig <input type="submit" value="Sign In">-->
+            <input type="submit" value="Login" onClick="window.location = 'leaderboarduser.html';"><!--dortes med link til showcase visning-->
+          </div>
+    </main>
+
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/javascript.js"></script>
+
+  </body>
+</html>

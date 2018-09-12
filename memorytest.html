@@ -1,0 +1,114 @@
+<!doctype html>
+
+<!--Huskespil fra https://github.com/sandraisrael/Memory-Game-fend-->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Huskespil</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Permanent+Marker" >
+    <link rel="stylesheet" href="css/app.css">
+    
+</head>
+<body>
+
+    <div class="containerapp">
+        <header>
+            <h1>Huskespil</h1>
+        </header>
+
+        <section class="score-panel">
+        	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Træk
+
+            <div class="timer">
+            </div>
+
+            <div class="restart" onclick=startGame()>
+        		<i class="fa fa-repeat"></i>
+        	</div>
+        </section>
+
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="apple">
+                <i class="fa fa-apple"></i>
+            </li>
+            <li class="card match" type="taxi">
+                <i class="fa fa-taxi"></i>
+            </li>
+            <li class="card" type="hus">
+                <p class="korttekst">Hus</p>
+            </li>
+            <li class="card" type="wifi">
+                <p class="korttekst">Wifi</p>
+            </li>
+            <li class="card match" type="taxi">
+                <p class="korttekst">Taxi</p>
+            </li>
+            <li class="card" type="blad">
+                <p class="korttekst">Blad</p>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="diamond">
+                <p class="korttekst">Diamant</p>
+            </li>
+            <li class="card" type="glas">
+                <p class="korttekst">Glas</p>
+            </li>
+            <li class="card" type="blad">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="glas">
+                <i class="fa fa-glass"></i>
+            </li>
+            <li class="card open show" type="hus">
+                <i class="fa fa-home"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <p class="korttekst">Cykel</p>
+            </li>
+            <li class="card" type="apple">
+                <p class="korttekst">Æble</p>
+            </li>
+            <li class="card" type="wifi">
+                <i class="fa fa-wifi"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>STORT TILLYKKE 🎉</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    JUBBIIII, Du har vundet 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>Du brugte <span id=finalMove> </span> træk</p>
+                    <p>og det tog <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Spil igen 😄</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
